@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <video class="input_video" hidden="hidden"></video>
+    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+  </div>
+  <div class="container">
+    <canvas id="canvas1"></canvas>
+    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+    <img id="playerImage" src="imgs/player.png" />
+    <img id="backgroundImage" src="imgs/background_single.png" />
+    <img id="enemyImage" src="imgs/enemy_1.png" />
+    <button type="button" id="fullScreenButton">Toggle fullscreen</button>
+  </div>
+  <script src="hands.js"></script>
+</body>
+</html>

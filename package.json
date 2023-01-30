@@ -1,0 +1,24 @@
+{
+  "name": "elec1",
+  "productName": "ELEC1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "Copyright":"None",
+  "icon":"",
+  "scripts": {
+    "start": "electron main.js",
+    "build": " electron-packager . hands --platform=win32 --arch=x64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^22.1.0",
+    "electron-packager": "^17.1.1",
+    "electron-winstaller": "^5.1.0"
+  }
+}
