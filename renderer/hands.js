@@ -354,7 +354,11 @@ this.setTimeout(thegame(), 5000);
       if (!gameOver) requestAnimationFrame(animate);
 
     };
-    animate();
+    setTimeout(
+      animate(),
+      3000
+    )
+
 
     if (position == 'ArrowDown' && gameOver) restartGame();
   }
